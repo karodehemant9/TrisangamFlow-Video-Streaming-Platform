@@ -5,7 +5,7 @@ const router = express.Router();
 const controller = require("../controllers/auth.controller");
 const validate = require("../middleware/validate.middleware");
 const {
-    registerValidator
+    registerValidator, loginValidator
 } = require("../validators/auth.validator");
 
 router.post(
@@ -13,6 +13,18 @@ router.post(
     registerValidator,
     validate,
     controller.register
+);
+
+router.post(
+    "/login",
+    loginValidator,
+    validate,
+    controller.login
+);
+
+router.post(
+    "/refresh",
+    controller.refresh
 );
 
 module.exports = router;

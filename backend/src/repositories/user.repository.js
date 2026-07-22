@@ -1,18 +1,24 @@
 const { getPool } = require("../database/connection");
 
 async function findByEmail(email) {
+
     const pool = getPool();
 
     const result = await pool
         .request()
         .input("email", email)
         .query(`
-            SELECT *
+            SELECT
+                id,
+                email,
+                username,
+                password_hash
             FROM users
-            WHERE email = @email
+            WHERE email=@email
         `);
 
     return result.recordset[0];
+
 }
 
 async function create(user) {
@@ -40,7 +46,28 @@ async function create(user) {
         `);
 }
 
+async function findById(id) {
+
+    const pool = getPool();
+
+    const result = await pool
+        .request()
+        .input("id", id)
+        .query(`
+            SELECT
+                id,
+                email,
+                username
+            FROM users
+            WHERE id=@id
+        `);
+
+    return result.recordset[0];
+
+}
+
 module.exports = {
     findByEmail,
+    findById,
     create
 };

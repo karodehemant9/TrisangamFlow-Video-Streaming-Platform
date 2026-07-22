@@ -18,6 +18,17 @@ const registerValidator = [
 
 ];
 
+const loginValidator = [
+
+    body("email")
+        .isEmail(),
+
+    body("password")
+        .notEmpty()
+
+];
+
 module.exports = {
-    registerValidator
+    registerValidator,
+    loginValidator
 };
