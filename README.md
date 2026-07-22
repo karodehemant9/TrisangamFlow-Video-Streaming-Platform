@@ -112,7 +112,7 @@ cd TrisangamFlow-Video-Streaming-Platform
 You need to create two `.env` files to configure the databases, storage, and application ports.
 
 **A. Root Directory (Docker)**
-Create a `.env` file directly in the root folder (`youtube-streaming-platform/.env`) and add these credentials:
+Create a `.env` file directly in the root folder (`TrisangamFlow-Video-Streaming-Platform/.env`) and add these credentials:
 ```env
 MSSQL_SA_PASSWORD=YourStrong@Passw0rd
 MINIO_ROOT_USER=minio
@@ -148,7 +148,7 @@ REDIS_PORT=6379
 *(Make sure `DB_PASSWORD` matches `MSSQL_SA_PASSWORD` and the MinIO keys match exactly as provided here).*
 
 ### 3. Start the Docker Infrastructure
-From the root folder (`youtube-streaming-platform`), start up SQL Server, Redis, and MinIO in the background:
+From the root folder (`TrisangamFlow-Video-Streaming-Platform`), start up SQL Server, Redis, and MinIO in the background:
 ```bash
 docker-compose up -d
 ```
