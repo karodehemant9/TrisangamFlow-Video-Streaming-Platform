@@ -6,14 +6,14 @@ TrisangamFlow is a production-grade, end-to-end video streaming platform built w
 
 ## 📸 Screenshots
 
-| Step 1: Authentication | Step 2: Empty Dashboard |
+| 1: Authentication | 2: Empty Dashboard |
 | :---: | :---: |
 | ![Step 1](./assets/step1.png) | ![Step 2](./assets/step2.png) |
-| **Step 3: Chunk Uploading** | **Step 4: Transcoding Job** |
+| **3: Chunk Uploading** | **4: Transcoding Job** |
 | ![Step 3](./assets/step3.png) | ![Step 4](./assets/step4.png) |
-| **Step 5: Upload Complete** | **Step 6: Home Feed** |
+| **5: Upload Complete** | **6: Home Feed** |
 | ![Step 5](./assets/step5.png) | ![Step 6](./assets/step6.png) |
-| **Step 7: Adaptive Video Player** | |
+| **7: Adaptive Video Player** | |
 | ![Step 7](./assets/step7.png) | |
 
 ---
