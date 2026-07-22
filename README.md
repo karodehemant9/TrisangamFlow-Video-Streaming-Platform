@@ -105,7 +105,7 @@ Before you start, make sure you have the following installed:
 Open a terminal and clone the repository to your machine:
 ```bash
 git clone <YOUR_GITHUB_REPO_URL>
-cd youtube-streaming-platform
+cd TrisangamFlow-Video-Streaming-Platform
 ```
 
 ### 2. Configure Environment Variables
